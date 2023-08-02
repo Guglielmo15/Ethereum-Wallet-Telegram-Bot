@@ -1,7 +1,7 @@
 # Ethereum-Wallet-Telegram-Bot
 This is a Python-based Telegram bot that allows users to create Ethereum wallets, import existing wallets using private keys, check their ETH balance, and send ETH to other addresses. The bot uses the web3.py library to interact with the Ethereum blockchain and the Telebot library for Telegram bot functionality.
 
-####How to make it works:
+#### How to make it works:
 
 First of all, you need to create a bot in Telegram and get an HTTP API token to connect to it, in order to do so go to BotFather in Telegram (https://t.me/BotFather), create a new bot by following the instructions, give it a name and then you'll get your secret HTTP API token;
 

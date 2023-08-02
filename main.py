@@ -71,7 +71,7 @@ def is_valid_private_key(private_key):
 @bot.message_handler(commands=["balance"])
 def balance_command(message):
     if len(user_wallets) > 0:
-        w3 = web3.Web3(web3.Web3.HTTPProvider('INSERT YOUR BLOCKCHAIN ENDPOINT HERE'))
+        w3 = web3.Web3(web3.Web3.HTTPProvider('https://goerli.infura.io/v3/INSERT YOUR API KEY HERE'))
 
         private_key = user_wallets[0]
         public_key = Account.from_key(private_key)
@@ -127,7 +127,7 @@ def is_valid_address(address):
         return False
 
 def send_transaction(private_key, receiver_address, amount):
-    w3 = web3.Web3(web3.Web3.HTTPProvider('INSERT YOUR BLOCKCHAIN ENDPOINT HERE'))
+    w3 = web3.Web3(web3.Web3.HTTPProvider('https://goerli.infura.io/v3/INSERT YOUR API KEY HERE'))
     account = Account.from_key(private_key)
     nonce = w3.eth.get_transaction_count(account.address)
     gas_price = w3.eth.gas_price

@@ -8,7 +8,7 @@ from eth_account import Account
 
 bot = telebot.TeleBot("INSERT YOUR BOT TOKEN")
 
-# Dictionary to store user wallet information (Replace with secure storage in production)
+# List to store user wallet information (Replace with secure storage in production)
 user_wallets = []
 
 
